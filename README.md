@@ -1,8 +1,16 @@
 # Moman
 
-Moman is a flat and responsive design theme for [Hexo](http://zespia.tw/hexo/).
-
 [Demo](http://morris821028.github.io/)
+
+Moman is a flat and responsive design theme for [Hexo](http://zespia.tw/hexo/) base on Pacman.
+
+## Difference ##
+
+* dark code style theme
+* extra some widget (ex. recent comment, recemt post ...).
+* ukagaka tool
+* replace Duoshuo to DISQUS.
+* add article list picture.
 
 Pacman 中文说明请访问[这里](http://A-limon.github.io/pacman/hello/introducing-pacman-theme/)
 
@@ -11,13 +19,13 @@ Pacman 中文说明请访问[这里](http://A-limon.github.io/pacman/hello/intro
 ### Install ###
 
 ```
-$ git clone https://github.com/A-limon/pacman.git themes/pacman
+$ git clone https://github.com/A-limon/pacman.git themes/moman
 ```
 **Pacman requires Hexo 2.4.5 and above.** 
 
 ### Enable ###
 
-Modify `theme` setting in blog folder` _config.yml` to `pacman`.
+Modify `theme` setting in blog folder` _config.yml` to `moman`.
 
 ### Update ###
 
