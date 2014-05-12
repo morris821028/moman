@@ -19,7 +19,7 @@ Pacman 中文说明请访问[这里](http://A-limon.github.io/pacman/hello/intro
 ### Install ###
 
 ```
-$ git clone https://github.com/A-limon/pacman.git themes/moman
+$ git clone https://github.com/morris821028/moman themes/moman
 ```
 **Pacman requires Hexo 2.4.5 and above.** 
 
