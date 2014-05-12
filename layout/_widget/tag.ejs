@@ -1,0 +1,12 @@
+<% if (site.tags.length){ %>
+<div class="tagslist">
+	<p class="asidetitle"><%= __('tags') %></p>
+		<ul class="clearfix">
+		<% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+			<% post.tags.each(function(tag) {%>
+				<li><a href="<%- config.root %><%- tag.path %>" title="<%= tag.name %>"><%= tag.name %><sup>M</sup></a></li>
+			<% }) %>
+        <% }) %>
+		</ul>
+</div>
+<% } %>

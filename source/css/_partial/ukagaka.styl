@@ -1,0 +1,125 @@
+#ukagaka_controlpanel 
+  font-size 1.1em
+  position fixed
+  right 40px
+  bottom 0px
+  img
+    font-family font-custom-family
+    color color-blue
+    width 24px
+    height 24px
+    display inline-block
+    padding 5px
+    &:hover
+      opacity 0.4
+      transition color .5s
+  span
+    float left
+    width 5%
+    color color-white
+    font-size font-size+10
+    padding 0.3em
+    @media tablet
+      padding 0.3em
+    &:hover:before
+      color color-blue
+    &[title="menu"]::before
+      font-family font-icon-family
+      font-smoothing()
+    &[title="menu"]::before
+      content "\f03a"    
+
+#ukagaka_menu_list
+  span
+    width 5%
+    color color-white
+    font-size font-size+10
+    padding 0.3em
+    margin 0.2em
+    @media tablet
+      padding 0.3em
+    &:hover:before
+      color color-blue
+    &[title="gotop"]::before,&[title="godown"]::before,&[title="music"]::before,&[title="mail"]::before,&[title="power"]::before,&[title="learn"]::before
+      font-family font-icon-family
+      font-smoothing()   
+    &[title="gotop"]::before
+      content "\f062"
+    &[title="godown"]::before
+      content "\f063"
+    &[title="music"]::before
+      content "\f001"
+    &[title="mail"]::before
+      content "\f003"
+    &[title="power"]::before
+      content "\f011"
+    &[title="learn"]::before
+      content "\f044"
+
+#ukagaka_panel 
+  width 300px
+  height 230px
+  position fixed
+  right 0px
+  bottom 30px
+  span 
+    padding 5px
+  	cursor pointer
+  	height 0px
+  
+
+.ukagaka_box,.ukagaka_toc
+  border-radius 10px
+  border-width 5px
+  border-style solid dashed dashed
+  position absolute
+  bottom 230px
+  right 120px
+  font-size 100%
+  background color-section
+  color gray
+
+.ukagaka_msg
+  border-radius 10px
+  padding 0.5em 2% 1em
+  color color-white
+  width 195px
+  font-family font-custom-family, font-default
+  &::before
+    font-smoothing()
+    padding-right 0.5em    
+  span#ukagaka_menu_btn_addstring, span#ukagaka_menu_btn_renewlist, 
+  span#ukagaka_menu_btn_exit
+    border-radius 5px
+    border-width 1px
+    border-style solid solid solid
+    display inline
+    color color-blue
+    &:hover
+        color color-theme2  
+    &::before
+        font-smoothing()
+        padding-right 0.5em
+  span#ukagaka_btn_menu, span#ukagaka_addmenu_add
+    border-radius 5px
+    border-width 1px
+    border-style solid solid solid
+    display inline
+    color color-blue
+    &:hover
+        color color-theme2  
+    &::before
+        font-smoothing()
+        padding-right 0.5em
+
+#ukagaka_img 
+  background url(/img/ukagaka_img4.png) no-repeat
+  width 300px
+  height 230px
+  position absolute
+  right 0px
+  bottom 0px 
+
+#ukagaka_stringinput 
+  >input
+    width 95%
