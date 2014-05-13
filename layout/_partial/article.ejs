@@ -2,28 +2,29 @@
   <% if (item.link) { %> 
     <a href="<%- item.link %>" target="_blank"> 
   <% } else{ %>
-    <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>" itemprop="url">
+    <a class="post-block-link" href="<%- config.root %><%- item.path %>" title="<%= item.title %>" itemprop="url">
   <% } %>
     <h1 itemprop="name"><%= item.title %></h1>
     <% if (desc){ %>
      <% if(item.description){ %>
       <p itemprop="description" ><%- item.description %></p>
       <% } else if(item.excerpt){ %>
-          <p itemprop="description" ><%= strip_html(item.excerpt).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 280) %></p>
+          <p itemprop="description" ><%- strip_html(item.excerpt).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 280) %></p>
       <% } else {%>
            <% if(item.photos) { %>
                 <p itemprop="description">
                 <% item.photos.forEach(function(photo, i){ %>
                     <img src="<%- photo %>" class="photos">
                 <% }) %>
-                <%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 280) %></p>
+                <%- strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 280) %></p>
            <% } else { %>
-                <p itemprop="description" ><%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 280) %></p>
+                <p itemprop="description" ><%- item.content.replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 280) %></p>
            <% } %>
         <% } %>
     <% } %>
-    <hr>
+    <footer class="article-footer">
     <%- partial('post/tags') %>
     <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished"><%= item.date.format(config.date_format) %></time>
+    </footer>
   </a>
 </section>

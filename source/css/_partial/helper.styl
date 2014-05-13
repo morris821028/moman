@@ -143,8 +143,8 @@ footer.article-footer
     position relative
     float left
     width 1em
-    height 2em
     margin-right 0.5em
+    padding 0.5em 0
     &:before
       font-family font-icon-family
       font-smoothing()
@@ -160,30 +160,30 @@ footer.article-footer
       background color-blue
 
 .article-small-tags
-  @media phone
-    width 50%
-  @media mini
-    width 20%
+  width 50%
   float right
   color #999
   font-family font-default
   font-size 12.6px
-  line-height 16px
-  padding 0.5em
   div
     position relative
     float left
     width 1em
-    height 1.2em
+    height 2em
     margin-right 0.5em
     &:before
       font-family font-icon-family
       font-smoothing()
       absolute-center(1.2em)
-      content "\f02c"    
+      content "\f02c"  
   span
+    float left
+    padding 0 0.3em
+    margin 0.3em
+    height 2em
     &:hover
-      color color-blue
+      color color-white
+      background color-blue
   
 .article-categories
   color lighten(color-gray,20%)

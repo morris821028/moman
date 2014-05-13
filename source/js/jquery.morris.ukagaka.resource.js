@@ -148,6 +148,17 @@
 
             var o = options;
 
+            var loadingText = o.loadingText,
+                learnPlaceholder = o.learnPlaceholder,
+                logText = o.logText,
+                menuMainText = o.menuMainText,
+                menuLearnText = o.menuLearnText,
+                menuLogText = o.menuLogText,
+                menuExitText = o.menuExitText,
+                menuCancelText = o.menuCancelText,
+                menuSubmitText = o.menuSubmitText,
+                menuQueryText = o.menuQueryText;
+                
             $("#ukagaka_usertalk").hide();
             if (navigator.userAgent.match(/Android|iPhone|iPad/i)) {
                 $(".ukagaka_img").hide();
