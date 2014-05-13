@@ -57,8 +57,7 @@
       content "\f044"
 
 #ukagaka_panel 
-  width 300px
-  height 230px
+  width 40%
   position fixed
   right 0px
   bottom 30px
@@ -78,12 +77,13 @@
   font-size 100%
   background color-section
   color gray
+  width 30%
 
 .ukagaka_msg
   border-radius 10px
   padding 0.5em 2% 1em
   color color-white
-  width 195px
+  width 80%
   font-family font-custom-family, font-default
   &::before
     font-smoothing()
@@ -112,14 +112,29 @@
         font-smoothing()
         padding-right 0.5em
 
-#ukagaka_img 
-  background url(/img/ukagaka_img4.png) no-repeat
-  width 300px
-  height 230px
+.ukagaka_img 
+  width 40%
+  @media mini
+    width 80%
+  @media tablet
+    width 40%
   position absolute
   right 0px
   bottom 0px 
 
+.ukagaka_img2
+  width 10%
+  @media mini
+    width 30%
+  @media tablet
+    width 15%
+
 #ukagaka_stringinput 
   >input
     width 95%
+
+input
+  &::-moz-placeholder 
+    color green
+  &::-webkit-input-placeholder
+    color green
