@@ -158,7 +158,7 @@
                 menuCancelText = o.menuCancelText,
                 menuSubmitText = o.menuSubmitText,
                 menuQueryText = o.menuQueryText;
-                
+
             $("#ukagaka_usertalk").hide();
             if (navigator.userAgent.match(/Android|iPhone|iPad/i)) {
                 $(".ukagaka_img").hide();
