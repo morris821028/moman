@@ -17,8 +17,29 @@
       <% } else if(item.excerpt){ %>
           <p itemprop="description" ><%- item.excerpt %></p>
       <% } else {%>
+<%
+var getSnippet = function(text, width) {
+  var snipped = "", cnt = 0;
+  width = width * 2;
+  for(var i = 0; i < text.length && cnt < width; i++) {
+    if(text[i] == '&' && text[i+1] == '#') {
+        while(i < text.length && text[i] != ';') {
+            snipped += text[i];
+            i++;
+        }
+        snipped += ';';
+        cnt += 2;
+    } else {
+        snipped += text[i];
+        cnt++;
+    }
+  }
+  return snipped;
+}
+%>
            <% if(item.photos) { %>
            <% var snippet = item.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 280); %>
+           <% snippet = getSnippet(item.content.replace(/<(?:.|\n)*?>/gm, ''), 140); %>
                 <p itemprop="description">   
                 <%- snippet %></p>
            <% } else { %>

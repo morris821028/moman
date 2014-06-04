@@ -9,11 +9,6 @@
 		<%- toc(item.content) %>
 		</div>
 		<% } %>
-		<% if(item.scarky) { %>
-			<!-- scarky widget http://scarky.com/ -->
-			<script type="text/javascript" src="http://scarky.com/widget/get/<%= item.scarky %>/"></script>
-			<!-- end scarky widget -->
-		<% } %>
 		<%- item.content %>  
 	</div>
 		<%- partial('footer') %>   	       
