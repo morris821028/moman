@@ -27,7 +27,7 @@ if (page.archive){
 
 <div id="main">
 <% page.posts.each(function(item){ %>
-  <%- partial('_partial/article', {item: item, index: true,desc: false}) %>
+  <%- partial('_partial/article_row', {item: item, index: true,desc: false}) %>
 <% }); %>
 <% if (page.total > 1){ %>
   <nav id="page-nav" class="clearfix">
