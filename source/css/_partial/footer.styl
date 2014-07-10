@@ -10,7 +10,7 @@ footer
   position relative
   .line
     width 100%
-    height 14em
+    height 6em
     margin 0 auto
     @media mini
       width 10em
@@ -28,7 +28,7 @@ footer
         margin 0 0 1.5em
 
 .author
-  width w=(110/16)em
+  width w=(110/20)em
   height w
   margin 0 auto
   if dataURI
@@ -42,7 +42,6 @@ footer
     transform rotateZ(360deg)
   @media mini
     position: absolute;
-    top 6em
     margin 0 0 1.5em
 
 .info
@@ -58,25 +57,16 @@ footer
   margin 0 auto
   color color-white
   @media mini
-    margin 4.5em 0 2em 0
+    margin 1.0em 0 0.2em 0
     float left
     width 75%
 
 .social-font
-  width 100%
-  margin 0 auto
-  float left
+  float right
+  display block
   padding-left 1%
-  @media phone
-    padding-left 20%
-  @media mini
-    width 18em 
-    position absolute  
-    right -3em
-    top 3em
   a
     float left
-    display block
     width 10%
     color color-white
     font-size font-size+80
@@ -107,6 +97,7 @@ footer
     font-family font-default
     font-size 0.6em
   width 100%
+  background color-top
   color color-white
   text-align center
   @media mini

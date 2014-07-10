@@ -1,0 +1,67 @@
+/*************************************
+ * generic styling for ALS elements
+ ************************************/
+.als-container
+  position relative
+  width 100%
+  z-index 0
+
+.als-viewport
+  position relative
+  overflow hidden
+  width 100%
+
+.als-wrapper
+  position relative
+  list-style none
+
+.als-item
+  position relative
+  display block
+  cursor pointer
+  float left
+
+.als-prev, .als-next
+  position absolute
+  cursor pointer
+  clear both
+
+/*************************************
+ * specific styling for #demo4
+ ************************************/
+#container
+  .als-item
+    margin 0px 30px 0 30px
+    min-height 152px
+    min-width 500px
+    .als-item-content
+      position relative
+      display block
+      vertical-align middle
+      margin-bottom 8px
+  .als-prev
+    left 0px
+  .als-next
+    right 25px
+
+#container .als-prev, #container .als-next
+  top 58px
+  width 15px
+  height 22px
+
+#container .als-prev, #container .als-next
+  color color-white
+  font-size font-size+180
+  z-index 9999
+  &:hover:before
+    color color-blue
+  &[title="prev"]::before,&[title="next"]::before
+    font-family font-icon-family
+    font-smoothing()
+  &[title="prev"]::before
+    content "\f053"
+  &[title="next"]::before
+    content "\f054"
+
+
+

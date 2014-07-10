@@ -1,0 +1,66 @@
+<div>
+	<style type="text/css">
+		.slidingdoors div {
+		  color: #fff;
+		  font-family: 'Verdana';
+		  font-weight: bold;
+		  overflow: hidden;
+		  width: 300px;
+		  height: 200px;
+		  position: relative;
+		  float: left;
+		  margin: 15px;
+		  box-sizing: border-box;
+		  transition: border .7s ease;
+		  border-radius: 3px;
+		  box-shadow: 
+		    0 0 10px #000,
+		    0 0 0 5px #fff;
+		}
+		.slidetop {
+		  background: #fff;
+		  border-top: solid 200px #ccc;
+		}
+
+		.slidetop:hover{
+		  border: solid 0px;
+		}
+
+		.slidebottom{
+		  background: #fff url(http://iweb.uz/azik/wp-content/uploads/2012/10/samarkand1.jpg) top right;
+		  border-bottom: solid 200px #ccc; 
+		}
+
+		.slidebottom:hover{
+		  border: solid 0px;
+		}
+
+		.slideleft{
+		  background: #fff url(http://iweb.uz/azik/wp-content/uploads/2012/10/samarkand1.jpg) bottom right;
+		  border-left: solid 300px #ccc; 
+		}
+
+		.slideleft:hover{
+		  border: solid 0px;
+		}
+
+		.slideright{
+		  background: #fff url(http://iweb.uz/azik/wp-content/uploads/2012/10/samarkand1.jpg) left;
+		  border-right: solid 300px #ccc; 
+		}
+
+		.slideright:hover{
+		  border: solid 0px;
+		}
+
+	</style>
+	<div class="slidingdoors">
+		  <div class="slidetop" style="background: url(<%- config.root %>img/ukagaka_img1.png) right;"></div>
+		  <div class="slidetop" style="background: url(<%- config.root %>img/ukagaka_img2.png) right;"></div>
+		  <div class="slidetop" style="background: url(<%- config.root %>img/ukagaka_img3.png) right;"></div>
+		  <div class="slidetop" style="background: url(<%- config.root %>img/ukagaka_img4.png) right;"></div>
+		  <div class="slidetop" style="background: url(<%- config.root %>img/ukagaka_img5.png) right;"></div>
+		  <div class="slidetop" style="background: url(<%- config.root %>img/ukagaka_img6.png) right;"></div>
+		  <div class="slidetop" style="background: url(<%- config.root %>img/ukagaka_img7.png) right;"></div>
+	</div>
+</div>

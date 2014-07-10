@@ -16,9 +16,11 @@ widgets:
 - category
 - archive
 - tag 
+- tagcloud
 - recent_comment
 - links
 - rss
+
 ## provide six widgets:category,tag,rss,archive,tagcloud,links.
 ## modify links in `/layout/_widget/links.ejs`.
 

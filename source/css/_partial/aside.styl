@@ -87,19 +87,39 @@
     padding 0.5em 0
   ul li
     float left      
+    display block    
+    border-style dotted
+    border-width 2px
+    border-radius 0.3em    
+    margin 0.3125em
+    padding 0.125em 0.3125em
+    background color-code
+    width 35%
+    height 1.6em
+    overflow hidden
+    &:hover
+      color color-theme
+      background lighten(color-gray, 50%)
 
-    a
-      display block    
-      border-style dotted
-      border-width 2px
-      border-radius 0.3em
-      margin 0.3125em
-      padding 0.125em 0.3125em
-      background color-code
-      &:hover
-        color color-theme
-        background lighten(color-gray, 50%)
-
+.tag-list
+  height 512px
+  overflow hidden
+  &:hover
+    overflow auto
+  li
+    float left      
+    display block    
+    border-style dotted
+    border-width 2px
+    border-radius 0.3em    
+    margin 0.3125em
+    padding 0.125em 0.3125em
+    background color-code
+    width 35%
+    height 1.6em
+    overflow hidden
+    &:hover
+      color color-theme
 //rss
 .rsspart
   background color-theme

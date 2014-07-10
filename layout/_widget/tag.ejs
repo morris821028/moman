@@ -2,9 +2,9 @@
 <div class="tagslist">
 	<p class="asidetitle"><%= __('tags') %></p>
 		<ul class="clearfix">
-		<% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+		<% site.posts.sort('date', -1).limit(10).each(function(post){ %>
 			<% post.tags.each(function(tag) {%>
-				<li><a href="<%- config.root %><%- tag.path %>" title="<%= tag.name %>"><%= tag.name %><sup>M</sup></a></li>
+				<li><a href="<%- config.root %><%- tag.path %>" title="<%= tag.name %>"><%= tag.name %><sup><%= tag.length %></sup></a></li>
 			<% }) %>
         <% }) %>
 		</ul>
